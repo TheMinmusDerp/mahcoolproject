@@ -6,6 +6,10 @@ class Plernert {
     this.x = x;
     this.y = y;
     this.planet = createSprite(this.x,this.y,this.radius,this.radius);
+    this.dockposition = {
+      x:this.x,
+      y:this.y
+    }
   }
   display(){
     if(this.type===0){
