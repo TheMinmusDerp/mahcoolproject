@@ -1,5 +1,4 @@
 class Plernert {
-
   constructor(radius, type, x,y) {
     this.radius = radius;
     this.type = type;

@@ -1,7 +1,7 @@
 class Spaceship {
   constructor(shiptype){
     this.shiptype = shiptype;
-    this.spaceship = createSprite(0,0,10,10);
+    this.spaceship = createSprite(shipyard.x,shipyard.y+50,10,10);
   }
   display(){
     if(this.shiptype === "transport"){
@@ -19,7 +19,13 @@ class Spaceship {
     if(this.shiptype === "probe"){
       this.image = Probe
     }
+    if(mousePressedOver(this.spaceship)){
+      this.spaceship.x += 1;
+      this.spaceship.y += 1;
+      //this.spaceship.x = 300;
+      //this.spaceship.y = 350;
+    }
     this.spaceship.addImage(this.image);
-    this.spaceship.scale = 0.01;
+    this.spaceship.scale = 0.05;
   }
 }

@@ -123,7 +123,7 @@ class Sterr {
       this.star.scale = 0.1;
     }
     if(this.spectralclass === "Y"){
-      this.image = Ybrowndwarf;
+      this.image = Ybrowndwarf; // red halo is added to make the thing visible
       this.star.scale = 0.1;
     }
     if(this.lumclass === "wolfrayet"){

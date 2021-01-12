@@ -64,7 +64,9 @@ function setup(){
   p1 = new Plernert(100, 4, 300,300);
   p2 = new Plernert(300, 10, 600,400);
   p3 = new Plernert(90,3,400,600);
-  s1 = new Sterr("G", "mainsequence", 1000,400);
+  s1 = new Sterr("M", "subdwarf", 1000,400);
+  shipyard = new Station("shipyard", 100, 100);
+  spaceship = new Spaceship("transport");
 }
 
 function draw(){
@@ -72,6 +74,11 @@ function draw(){
   p1.display();
   p2.display();
   p3.display();
+  s1.display();
+  shipyard.display();
+  spaceship.display();
   drawSprites();
+
+  
 
 }
