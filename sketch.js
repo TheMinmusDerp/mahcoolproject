@@ -78,7 +78,16 @@ function draw(){
   shipyard.display();
   spaceship.display();
   drawSprites();
-
-  
-
+  if(keyDown("W")){
+    spaceship.position.x=spaceship.position.x-1
+  }
+  if(keyDown("S")){
+    spaceship.position.x=spaceship.position.x+1
+  }
+  if(keyDown("A")){
+    spaceship.position.y=spaceship.position.y-1
+  }
+  if(keyDown("D")){
+    spaceship.position.y=spaceship.position.y+1
+  }
 }
